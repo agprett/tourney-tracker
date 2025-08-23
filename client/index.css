@@ -1,0 +1,135 @@
+body {
+  width: 100vw;
+  background-color: #AEA7B4;
+}
+
+nav {
+  height: 75px;
+  background-color: #085957;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 0 10px;
+}
+
+.logo {
+  height: 60px;
+}
+
+a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  color: white;
+  text-decoration: none;
+  /* transition: background-color 0.5s ease-in-out; */
+}
+
+button {
+  cursor: pointer;
+}
+
+a.active {
+  text-decoration: underline;
+  font-weight: 700;
+  text-underline-offset: 7px;
+}
+
+.tournaments-view {
+  margin: 45px 15px 25px;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-radius: 4px;
+  color: white;
+  background-color: #085957;
+}
+
+.tournaments-table {
+  width: 95%;
+  margin: 0 auto;
+}
+
+th {
+  position: relative;
+  text-align: start;
+  padding: 25px 0 20px 15px;
+}
+
+th::after {
+  content: " ";
+  display: inline-block;
+  height: 25px;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  background-color: #AEA7B4;
+}
+
+td {
+  text-align: start;
+  padding: 25px 0 20px 15px;
+  border-top: 2px solid #AEA7B4;
+}
+
+td button {
+  color: white;
+  border: 1px solid #AEA7B4;
+}
+
+td button:hover {
+  cursor: pointer;
+}
+
+.green {
+  border-radius: 25% 0 0 25%;
+  background-color: green;
+}
+
+.meh {
+ background-color: #706677;
+}
+
+.red {
+  border-radius: 0 25% 25% 0;
+  background-color: red;
+}
+
+
+.new-tourney-btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #1081AD;
+  cursor: pointer;
+}
+
+
+#new-tourney-form-wrapper {
+  width: 100%;
+  padding: 45px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#new-tourney-form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#new-tourney-btn-wrapper {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
